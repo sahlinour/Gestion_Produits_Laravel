@@ -56,7 +56,7 @@ class ProductController extends Controller
             'marque' => 'required|string',
             'prix' => 'required|numeric',
             'stock' => 'required|integer|min:1|max:500',
-            'image' => 'file',
+            'image' => 'required|file',
         ]);
 
         $newProduct = [
